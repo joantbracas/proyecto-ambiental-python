@@ -1,0 +1,36 @@
+# **COMANDOS POWERSHEL (Terminal Windows 11 pro)**
+
+#### 
+
+#### **GRABAR PANTALLA** 
+
+
+
+###### **NORMAL:**
+
+**ffmpeg -f gdigrab -framerate 30 -i desktop -c:v libx264 -pix\_fmt yuv420p grabado.mp4**
+
+###### 
+
+###### **EXPANDIDA:** 
+
+ffmpeg -f gdigrab -framerate 30 -offset\_x 0 -offset\_y 0 -video\_size 3840x1080 -i desktop -c:v libx264 -pix\_fmt yuv420p grabado.mp4
+
+
+
+ffmpeg -f gdigrab -framerate 20 -offset\_x 0 -offset\_y 0 -video\_size 3840x1080 -i desktop -c:v libx264 -preset ultrafast -crf 28 -pix\_fmt yuv420p grabado\_ligero.mp4
+
+
+
+ffmpeg -f gdigrab -framerate 24 -offset\_x 0 -offset\_y 0 -video\_size 3840x1080 -i desktop -c:v libx264 -preset superfast -tune zerolatency -pix\_fmt yuv420p grabado\_final.mp4
+
+
+
+#### **GUARDAR Y ACTUALIZAR GITHUB**
+
+**git add .**
+
+**git commit -m "Actualización de archivos de ingeniería ambiental"**
+
+**git push origin main**
+
