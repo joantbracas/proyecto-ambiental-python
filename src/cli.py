@@ -1,15 +1,19 @@
-from src.converter import ejecutar_conversion
+from src.converter import ejecutar_conversion_fisica, convertir_contaminante_aire
+from src.units import PM_SO2, PM_NO2
 
-def mostrar_pruebas():
-    print("--- Sistema de Conversión de Ingeniería Ambiental ---")
+def ejecutar_auditoria_ambiental():
+    print("\n" + "="*40)
+    print("=== SOFTWARE DE GESTION AMBIENTAL ===")
+    print("="*40)
+    
+    # Prueba 1: Residuos
+    residuos = ejecutar_conversion_fisica(1.5, "tonne", "kg")
+    print(f"[RESIDUOS] 1.5 Toneladas -> {residuos}")
 
-    # Ejemplo 1: Temperatura
-    temp = ejecutar_conversion(25, "degC", "degF")
-    print(f"Temperatura: {temp}")
-
-    # Ejemplo 2: Masa de contaminantes
-    masa = ejecutar_conversion(2, "kg", "mg")
-    print(f"Masa de sedimento: {masa}")
+    # Prueba 2: Calidad del Aire (SO2)
+    so2_ppm = convertir_contaminante_aire(100, PM_SO2)
+    print(f"[AIRE] 100 mg/m3 de SO2 -> {so2_ppm} ppm")
+    print("="*40 + "\n")
 
 if __name__ == "__main__":
-    mostrar_pruebas()
+    ejecutar_auditoria_ambiental()
