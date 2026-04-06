@@ -24,8 +24,6 @@ ffmpeg -f gdigrab -framerate 30 -i desktop -c:v libx264 -pix\\\_fmt yuv420p grab
 
 
 
-
-
 ###### 
 
 ###### **EXPANDIDA:**
@@ -86,15 +84,5 @@ git push origin main
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+##### **OTROS COMANDOS**
 
