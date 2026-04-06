@@ -7,9 +7,6 @@
 **taskkill /f /im explorer.exe; start explorer.exe**
 
 
-
-
-
 #### **GRABAR PANTALLA**
 
 ###### **NORMAL:**
@@ -40,11 +37,11 @@ ffmpeg -f gdigrab -framerate 30 -offset\_x 0 -offset\_y 0 -video\_size 3920x1090
 
 #### **GUARDAR Y ACTUALIZAR GITHUB**
 
-**git add .**
+git add .
 
-**git commit -m "Actualización de archivos de ingeniería ambiental"**
+git commit -m "Actualización de archivos de ingeniería ambiental"
 
-**git push origin main**
+git push origin main
 
 
 
